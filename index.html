@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Mis primeros pasos en HTML</title>
+        <link rel="preload" href="css/style.css" as="style"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1 class="title">
+                    "Universidad de Guayaquil"
+                    <span> Website</span>
+                </h1>
+                <p class="subtitle">Facultad de Ciencias Matemáticas y Físicas - Carrera de Software</p>
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="Grupos_UG.html">Unidades</a>
+                    <a href="calificaciones.html">Calificaciones</a>
+                </nav>
+            </div>
+        </header>
+       <main class="container">
+            <section class="card" id="about">
+                <h2>Acerca de mí</h2>
+                <p>
+                    ¡Hola :D!
+                    Mi nombre es Daniel Fernando Castillo Mera, y este es mi sitio web personal.
+                    Soy un estudiante de Desarrollo de Aplicaciones Web en la Universidad de Guayaquil.
+                </p>
+            </section>
+            <section class="card">
+                <h2>Mis intereses</h2>
+                <img src="public/Foto_actualV2.png" alt="Foto de Daniel"/>
+                <p>
+                    Me interesan las tecnologías web y el desarrollo de aplicaciones. Disfruto aprendiendo nuevas habilidades y enfrentando desafíos en el mundo del desarrollo.
+                    Tecnologías como HTML, CSS y JavaScript son mis favoritas, y me encanta crear proyectos que me permitan aplicar lo que he aprendido.
+                </p>
+            </section>
+            <section class="card" id="contact">
+                <h2>Contacto</h2>
+                <p>
+                    Daniel Fernando Castillo Mera
+                    daniel@gmail.com
+                    0999999999
+                </p>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"/>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"/>
+                    <br>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+         </main>
+    </body>
+</html>
