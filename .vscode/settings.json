@@ -1,4 +1,3 @@
 {
-    "editor.fontSize": 15,
-    "editor.mouseWheelZoom": true
+    "livePreview.defaultPreviewPath": "/index.html"
 }

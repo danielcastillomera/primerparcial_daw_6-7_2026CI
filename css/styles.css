@@ -1,24 +1,39 @@
+:root{
+  /*pseudoelementos para crear variables personalizada tmb conocidos como custom properties*/
+  --blanco: #ffffff;
+  --oscuro: #000000;
+  --primario: #4682b4;
+  --segundario: rgba(255, 193, 7, 1);
+  --gris: #757575;
+}
 html{
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 body {
-    font-size: 16px;
-    font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-family: "Krub", sans-serif;/*colocralo aca para que se aplique en todo*/
 }
 h1{
-    text-align: center;
-    color: #2563EB;
-    text-transform: lowercase; /* Cambia a minúsculas */
+  text-align: center;
+  color: #2563EB;
+  /* text-transform: lowercase;  Cambia a minúsculas */
 }
 span{
-    color: #44776655;
-    font-size: 3rem;
+  color: #44776655;
+  font-size: 3rem;
 }
 .title{
-    text-align: center;
-    color: #4400ff55;
-    text-transform: lowercase;
+  /*no iniciar con numeros un class, si -_*/
+  text-align: center;
+  font-size: 3.8rem;
+  color: var(--primario);
+  font-family: 'Times New Roman', Times, serif;/*fuentes seguras*/
 }
+.title span{
+  font-size: 2rem;
+  color: var(--segundario);
+}
+
 /* Estilos compartidos para todas las páginas
 :root {
   color-scheme: light;
