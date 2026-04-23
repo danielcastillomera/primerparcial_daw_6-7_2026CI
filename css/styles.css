@@ -13,6 +13,18 @@ body {
   font-size: 16px;
   font-family: "Krub", sans-serif;/*colocralo aca para que se aplique en todo*/
 }
+
+/*@media (min-width:480px) {/*celura
+  body{
+    background-color: blue;
+  }
+}
+
+@media (min-width: 768px) {/*tablet
+  body{
+    background-color: red;
+  }
+}*/
 h1{
   text-align: center;
   color: #2563EB;
@@ -34,140 +46,64 @@ span{
   color: var(--segundario);
 }
 
-/* Estilos compartidos para todas las páginas
-:root {
-  color-scheme: light;
-  --bg: #e9eef8;
-  --surface: #ffffff;
-  --surface-strong: #f8fafc;
-  --text: #1d2939;
-  --muted: #475569;
-  --primary: #2563eb;
-  --primary-soft: #dbeafe;
-  --border: rgba(15, 23, 42, 0.08);
+.contenedor{
+  width: 120rem;
+  margin-top: 0rem;
+  margin-right: auto;
+  margin-bottom: 0rem;
+  margin-left: auto;
+ /*margin: 0 auto 0 auto;*/
+ /*margin:0 auto*/
+}
+.nav-bg{
+  background-color: var(--segundario);
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: radial-gradient(circle at top, rgba(37, 99, 235, 0.15), transparent 40%),
-    linear-gradient(180deg, #eef4ff 0%, #f8fbff 100%);
-  color: var(--text);
-}
-
-.container {
-  width: min(1100px, calc(100% - 2rem));
-  margin: 0 auto;
-}
-
-header {
-  background: var(--primary);
-  color: white;
-  padding: 1.5rem 0.75rem;
-  box-shadow: 0 22px 60px rgba(37, 99, 235, 0.16);
-}
-
-header .container {
-  display: grid;
-  gap: 1rem;
-}
-
-header h1 {
-  margin: 0;
-  font-size: clamp(2rem, 3vw, 2.7rem);
-  letter-spacing: -0.03em;
-}
-
-header .subtitle {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.88);
-  font-size: 1rem;
-}
-
-nav {
+.navegacion-principal{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.75rem;
-}
+  flex-direction: column;/*por defecto es row*/
+  /*align-items: center; el justify de columns*/
 
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 0.55rem 0.85rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.14);
-  transition: background 0.2s ease, transform 0.2s ease;
 }
-
-nav a:hover {
-  background: rgba(255, 255, 255, 0.24);
-  transform: translateY(-1px);
+@media (min-width: 480px) {
+  .navegacion-principal{
+    flex-direction: row;
+  }
 }
-
-main {
-  padding: 1.5rem 0 2rem;
+@media (min-width: 768px) {
+  .navegacion-principal{
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
-
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 24px;
-  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.08);
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+@media (min-width: 1140px) {
+  .navegacion-principal{
+    flex-direction: row;
+  }
 }
-
-.card h2,
-.card h3,
-.card h4 {
-  margin-top: 0;
+@media (min-width: 1440px) {
+  .navegacion-principal{
+    flex-direction: row;
+  }
 }
-
-.card p,
-.card li {
-  line-height: 1.75;
-  color: var(--muted);
-}
-
-.card ul {
-  padding-left: 1.3rem;
-  margin: 1rem 0 0;
-}
-
-.card li {
-  margin-bottom: 0.65rem;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 20px;
+.navegacion-principal a{
+  /*background-color: var(--primario);*/
   display: block;
-  margin: 1.25rem auto;
-}
-
-footer {
   text-align: center;
-  color: var(--muted);
-  padding: 1.25rem 0 2rem;
+  padding: 1rem;
+  color : var(--blanco);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-@media (min-width: 720px) {
-  header .container {
-    gap: 1.25rem;
-  }
-
-  nav {
-    justify-content: center;
-  }
-} */
+.navegacion-principal a:hover{
+  background-color: var(--primario);
+  color: var(--oscuro);
+  transition: all 0.3s ease;
+}
+.hero{
+  background-image: url(../public/Foto_actualV2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

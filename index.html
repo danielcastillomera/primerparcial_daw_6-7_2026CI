@@ -4,11 +4,13 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Mis primeros pasos en HTML</title>
-        <link rel="preload" href="css/styles.css" as="style"/>
-        <link rel="stylesheet" href="css/styles.css"/>
+        <link rel="preload" href="css/normalize.css" as="style"/>
+        <link rel="stylesheet" href="css/normalize.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="preload" href="css/styles.css" as="style"/>
+        <link rel="stylesheet" href="css/styles.css"/>
     </head>
     <body>
         <header>
@@ -18,13 +20,24 @@
                     <span> Website</span>
                 </h1>
                 <p class="subtitle">Facultad de Ciencias Matemáticas y Físicas - Carrera de Software</p>
-                <nav>
+               <div class="nav-bg">
+                <nav class="navegacion-principal" contenedor>
                     <a href="index.html">Inicio</a>
                     <a href="Grupos_UG.html">Grupos UG</a>
                     <a href="calificaciones.html">Calificaciones</a>
                 </nav>
             </div>
         </header>
+
+        <section class="hero">
+            <div class="contenido-hero">
+                <p>
+                    Bienvenidos a mi sitio web personal, donde compartiré mis experiencias, proyectos y conocimientos en el mundo del desarrollo web. Aquí encontrarás información sobre mis intereses, habilidades y cómo contactarme. ¡Espero que disfrutes explorando mi sitio tanto como yo disfruté creándolo!
+                    <img src="iconos/apple.svg" alt="icono de manzana"/>
+                </p>
+            </div>
+        </section>
+
        <main class="container">
             <section class="card" id="about">
                 <h2>Acerca de mí</h2>
@@ -36,7 +49,6 @@
             </section>
             <section class="card">
                 <h2>Mis intereses</h2>
-                <img src="public/Foto_actualV2.png" alt="Foto de Daniel" width="200px"/>
                 <p>
                     Me interesan las tecnologías web y el desarrollo de aplicaciones. Disfruto aprendiendo nuevas habilidades y enfrentando desafíos en el mundo del desarrollo.
                     Tecnologías como HTML, CSS y JavaScript son mis favoritas, y me encanta crear proyectos que me permitan aplicar lo que he aprendido.
