@@ -1,109 +1,221 @@
-:root{
-  /*pseudoelementos para crear variables personalizada tmb conocidos como custom properties*/
+:root {
+  /*pseudoelementos para crear variables personalizadas tambien conocidos como custom properties*/
   --blanco: #ffffff;
-  --oscuro: #000000;
+  --oscuro: #212121;
   --primario: #4682b4;
-  --segundario: rgba(255, 193, 7, 1);
+  --secundario: rgba(255, 193, 7, 1);
   --gris: #757575;
 }
-html{
+
+html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
+
 body {
   font-size: 16px;
-  font-family: "Krub", sans-serif;/*colocralo aca para que se aplique en todo*/
+  font-family: "Krub", sans-serif; /*colocarlo aca para que aplique a todo*/
 }
+/*1 rem = 10px*/
 
-/*@media (min-width:480px) {/*celura
-  body{
-    background-color: blue;
-  }
-}
-
-@media (min-width: 768px) {/*tablet
-  body{
-    background-color: red;
-  }
-}*/
-h1{
-  text-align: center;
-  color: #2563EB;
-  /* text-transform: lowercase;  Cambia a minúsculas */
-}
-span{
-  color: #44776655;
-  font-size: 3rem;
-}
-.title{
-  /*no iniciar con numeros un class, si -_*/
+.titulo {
+  /*no iniciar con numeros un class*/
   text-align: center;
   font-size: 3.8rem;
   color: var(--primario);
-  font-family: 'Times New Roman', Times, serif;/*fuentes seguras*/
+  font-family: "Times New Roman", Times, serif; /*fuentes seguras*/
 }
-.title span{
+.titulo span {
   font-size: 2rem;
-  color: var(--segundario);
+  color: var(--secundario);
 }
 
-.contenedor{
-  width: 120rem;
+.contenedor {
+  max-width: 120rem;
   margin-top: 0rem;
   margin-right: auto;
   margin-bottom: 0rem;
   margin-left: auto;
- /*margin: 0 auto 0 auto;*/
- /*margin:0 auto*/
-}
-.nav-bg{
-  background-color: var(--segundario);
+  /*margin: 0 auto 0 auto;    */
+  /* margin: 0 auto   */
 }
 
-.navegacion-principal{
+.nav-bg {
+  background-color: var(--secundario);
+}
+
+.navegacion-principal {
   display: flex;
-  flex-direction: column;/*por defecto es row*/
+  flex-direction: column; /*Por defecto es row*/
   /*align-items: center; el justify de columns*/
+}
 
-}
 @media (min-width: 480px) {
-  .navegacion-principal{
-    flex-direction: row;
-  }
-}
-@media (min-width: 768px) {
   .navegacion-principal{
     flex-direction: row;
     justify-content: space-between;
   }
 }
+
+@media (min-width: 768px) {
+  .navegacion-principal {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 @media (min-width: 1140px) {
   .navegacion-principal{
     flex-direction: row;
+    justify-content: space-between;
   }
 }
-@media (min-width: 1440px) {
+
+@media (min-width: 1400px) {
   .navegacion-principal{
     flex-direction: row;
+    justify-content: space-between;
   }
 }
-.navegacion-principal a{
-  /*background-color: var(--primario);*/
+
+.navegacion-principal a {
+  /*background-color: var(--primario);
+  display: inline;*/
   display: block;
   text-align: center;
   padding: 1rem;
-  color : var(--blanco);
+  color: var(--blanco);
   text-decoration: none;
   font-size: 2rem;
   font-weight: bold;
 }
 
-.navegacion-principal a:hover{
+.navegacion-principal a:hover {
   background-color: var(--primario);
   color: var(--oscuro);
-  transition: all 0.3s ease;
 }
-.hero{
-  background-image: url(../public/Foto_actualV2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+
+.hero {
+  padding: 2rem;
+  background-color: var(--blanco);
+}
+
+.contenido-hero {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero-texto {
+  text-align: left;
+}
+
+.nombre {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--primario);
+  margin: 0;
+}
+
+.foto-perfil {
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-footer {
+  text-align: left;
+}
+
+.ubicacion {
+  font-size: 1.6rem;
+  color: var(--gris);
+  margin: 0 0 1rem 0;
+}
+
+.btn-contacto {
+  display: inline-block;
+  background-color: var(--primario);
+  color: var(--blanco);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contacto:hover {
+  background-color: var(--secundario);
+  color: var(--oscuro);
+}
+
+@media (min-width: 480px) {
+  .hero {
+    padding: 3rem 2rem;
+  }
+
+  .nombre {
+    font-size: 2.8rem;
+  }
+
+  .foto-perfil {
+    max-width: 35rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 4rem 2rem;
+  }
+
+  .contenido-hero {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+
+  .hero-texto {
+    flex: 1 1 100%;
+  }
+
+  .foto-perfil {
+    flex: 0 1 auto;
+    max-width: 40rem;
+  }
+
+  .hero-footer {
+    flex: 1 1 100%;
+  }
+
+  .nombre {
+    font-size: 3.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: 5rem 2rem;
+  }
+
+  .foto-perfil {
+    max-width: 45rem;
+  }
+
+  .nombre {
+    font-size: 3.6rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero {
+    padding: 6rem 2rem;
+  }
+
+  .foto-perfil {
+    max-width: 50rem;
+  }
 }

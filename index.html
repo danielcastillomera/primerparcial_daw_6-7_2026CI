@@ -1,80 +1,122 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Mis primeros pasos en HTML</title>
-        <link rel="preload" href="css/normalize.css" as="style"/>
-        <link rel="stylesheet" href="css/normalize.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <link rel="preload" href="css/styles.css" as="style"/>
-        <link rel="stylesheet" href="css/styles.css"/>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <h1 class="title">
-                    "Universidad de Guayaquil"
-                    <span> Website</span>
-                </h1>
-                <p class="subtitle">Facultad de Ciencias Matemáticas y Físicas - Carrera de Software</p>
-               <div class="nav-bg">
-                <nav class="navegacion-principal" contenedor>
-                    <a href="index.html">Inicio</a>
-                    <a href="Grupos_UG.html">Grupos UG</a>
-                    <a href="calificaciones.html">Calificaciones</a>
-                </nav>
-            </div>
-        </header>
+  <!-- el idioma -->
+   <head>
+    <meta charset="UTF-8" />
+    <!-- encoding, ñ, tildes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Navegador-->
+    <title>Hola mundo</title>
+    <!-- Titulo de la pagina-->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Krub:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo">
+        Desarrollo de Aplicaciones Web <span> Website </span>
+      </h1>
+      <!--Utilizar un h1 por documento html-->
+    </header>
 
-        <section class="hero">
-            <div class="contenido-hero">
-                <p>
-                    Bienvenidos a mi sitio web personal, donde compartiré mis experiencias, proyectos y conocimientos en el mundo del desarrollo web. Aquí encontrarás información sobre mis intereses, habilidades y cómo contactarme. ¡Espero que disfrutes explorando mi sitio tanto como yo disfruté creándolo!
-                    <img src="iconos/apple.svg" alt="icono de manzana"/>
-                </p>
-            </div>
-        </section>
+    <div class="nav-bg">
+      <nav class="navegacion-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="grupos_UG.html">Grupos UG</a>
+        <a href="calificaciones.html">Calificaciones</a>
+      </nav>
+    </div>
 
-       <main class="container">
-            <section class="card" id="about">
-                <h2>Acerca de mí</h2>
-                <p>
-                    ¡Hola :D!
-                    Mi nombre es Daniel Fernando Castillo Mera, y este es mi sitio web personal.
-                    Soy un estudiante de Desarrollo de Aplicaciones Web en la Universidad de Guayaquil.
-                </p>
-            </section>
-            <section class="card">
-                <h2>Mis intereses</h2>
-                <p>
-                    Me interesan las tecnologías web y el desarrollo de aplicaciones. Disfruto aprendiendo nuevas habilidades y enfrentando desafíos en el mundo del desarrollo.
-                    Tecnologías como HTML, CSS y JavaScript son mis favoritas, y me encanta crear proyectos que me permitan aplicar lo que he aprendido.
-                </p>
-            </section>
-            <section class="card" id="contact">
-                <h2>Contacto</h2>
-                <p>
-                    Daniel Fernando Castillo Mera <br>
-                    daniel@gmail.com <br>
-                    0999999999 <br>
-                    La Prosperina. <br>
-                </p>
-                <form>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre"/>
-                    <br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email"/>
-                    <br>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje"></textarea>
-                    <br>
-                    <button type="submit">Enviar</button>
-                </form>
-            </section>
-         </main>
-    </body>
+    <section class="hero">
+      <div class="contenido-hero">
+        <div class="hero-texto">
+          <p class="nombre">Daniel Fernando Castillo Mera</p>
+        </div>
+        <img class="foto-perfil" src="public/MI-FOTO-SIN-FONDO-FIX.png" alt="Daniel Fernando Castillo Mera"/>
+        <div class="hero-footer">
+          <p class="ubicacion">Guayaquil, Ecuador</p>
+          <a href="#contacto" class="btn-contacto">Contáctame</a>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <h2>Tecnologías</h2>
+      <section>
+        <!-- Si tiene un heading como primer hijo se recomienda hacer un section-->
+        <h3>HTML</h3>
+        <p>
+            Next.js 15, React 19, TypeScript 5.9, Tailwind CSS 4.
+        </p>
+      </section>
+      <section>
+        <h3>Next.js 15</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          vulputate efficitur diam, vel mollis leo.
+        </p>
+      </section>
+      <section>
+        <h3>React 19</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          vulputate efficitur diam, vel mollis leo.
+        </p>
+      </section>
+      <section>
+        <h3>TypeScript 5.9</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          vulputate efficitur diam, vel mollis php.
+        </p>
+      </section>
+      <section>
+        <h3>Tailwind CSS 4</h3>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </p>
+      </section>
+    </main>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form>
+        <fieldset>
+          <legend>Escríbeme</legend>
+
+          <div>
+            <label>Nombres:</label>
+            <input type="text" placeholder="Juanito Carlos Pérez Palomino" />
+          </div>
+          <div>
+            <label>Correo:</label>
+            <input type="email" placeholder="juanito@ejemplo.com" />
+          </div>
+          <div>
+            <label>Teléfono:</label>
+            <input type="tel" placeholder="0912345678" />
+          </div>
+          <div>
+            <label>Mensaje:</label>
+            <textarea placeholder="Escribe tu mensaje aquí..."></textarea>
+          </div>
+          <div>
+            <input type="submit" value="Enviar" />
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+    <footer>
+      <p>2026 - Todos los derechos reservados. - Daniel Fernando Castillo Mera</p>
+    </footer>
+  </body>
 </html>
