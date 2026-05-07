@@ -1,13 +1,9 @@
 <!doctype html>
-<html lang="en">
-  <!-- el idioma -->
-   <head>
+<html lang="es">
+  <head>
     <meta charset="UTF-8" />
-    <!-- encoding, ñ, tildes-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Navegador-->
-    <title>Hola mundo</title>
-    <!-- Titulo de la pagina-->
+    <title>DAW 6-7</title>
     <link rel="preload" href="css/normalize.css" as="style" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +20,6 @@
       <h1 class="titulo">
         Desarrollo de Aplicaciones Web <span> Website </span>
       </h1>
-      <!--Utilizar un h1 por documento html-->
     </header>
 
     <div class="nav-bg">
@@ -37,86 +32,93 @@
 
     <section class="hero">
       <div class="contenido-hero">
-        <div class="hero-texto">
-          <p class="nombre">Daniel Fernando Castillo Mera</p>
-        </div>
-        <img class="foto-perfil" src="public/MI-FOTO-SIN-FONDO-FIX.png" alt="Daniel Fernando Castillo Mera"/>
-        <div class="hero-footer">
-          <p class="ubicacion">Guayaquil, Ecuador</p>
-          <a href="#contacto" class="btn-contacto">Contáctame</a>
-        </div>
+        <p class="nombre">Daniel Fernando Castillo Mera</p>
+        <img class="foto-hero" src="public/MI-FOTO-SIN-FONDO-FIX.png" alt="Daniel Fernando Castillo Mera"/>
+        <p class="edad">Edad: 21 años</p>
+        <p class="nacionalidad">Nacionalidad: Ecuatoriana</p>
+        <p class="universidad">Universidad: Universidad de Guayaquil</p>
+        <p class="carrera">Carrera: Software</p>
+        <p class="asignatura">Asignatura: Desarrollo de Aplicaciones Web</p>
+        <p class="curso">Curso: 6-7</p>
+        <a class="boton" href="#contacto">Contactar</a>
       </div>
     </section>
 
-    <main>
+    <main class="sombra">
       <h2>Tecnologías</h2>
-      <section>
-        <!-- Si tiene un heading como primer hijo se recomienda hacer un section-->
-        <h3>HTML</h3>
-        <p>
-            Next.js 15, React 19, TypeScript 5.9, Tailwind CSS 4.
-        </p>
-      </section>
-      <section>
-        <h3>Next.js 15</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate efficitur diam, vel mollis leo.
-        </p>
-      </section>
-      <section>
-        <h3>React 19</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate efficitur diam, vel mollis leo.
-        </p>
-      </section>
-      <section>
-        <h3>TypeScript 5.9</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-          vulputate efficitur diam, vel mollis php.
-        </p>
-      </section>
-      <section>
-        <h3>Tailwind CSS 4</h3>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        </p>
+      <div class="lenguajes">
+        <section class="lenguaje">
+          <h3>HTML</h3>
+          <div class="iconos">
+            <img src="iconos/html5.svg" alt="HTML5" />
+          </div>
+          <p>
+            Lenguaje de marcado para crear la estructura de páginas web modernas y semánticas.
+          </p>
+        </section>
+        <section class="lenguaje">
+          <h3>CSS</h3>
+          <div class="iconos">
+            <img src="iconos/CSS3.svg" alt="CSS3" />
+          </div>
+          <p>
+            Lenguaje de estilos para crear diseños atractivos y responsivos.
+          </p>
+        </section>
+        <section class="lenguaje">
+          <h3>Javascript</h3>
+          <div class="iconos">
+            <img src="iconos/JavaScript.svg" alt="JavaScript" />
+          </div>
+          <p>
+            Lenguaje de programación para interactividad en navegadores web.
+          </p>
+        </section>
+        <section class="lenguaje">
+          <h3>Next.js</h3>
+          <div class="iconos">
+            <img src="iconos/Nextjs15.svg" alt="Next.js 15" />
+          </div>
+          <p>
+            Framework React para aplicaciones web modernas y escalables.
+          </p>
+        </section>
+      </div>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+
+        <form class="formulario">
+          <fieldset>
+            <legend>Contáctame</legend>
+
+            <div class="contenedor-campos">
+              <div class="campo">
+                <label>Nombre</label>
+                <input class="input-text" type="text" placeholder="Nombre" />
+              </div>
+              <div class="campo">
+                <label>Correo</label>
+                <input class="input-text" type="email" placeholder="Correo" />
+              </div>
+              <div class="campo">
+                <label>Teléfono</label>
+                <input class="input-text" type="tel" placeholder="Teléfono" />
+              </div>
+              <div class="campo">
+                <label>Mensaje</label>
+                <textarea class="input-text" placeholder="Escribe tu mensaje aquí..."></textarea>
+              </div>
+            </div>
+            <div class="enviar">
+              <input class="boton" type="submit" value="Enviar" />
+            </div>
+          </fieldset>
+        </form>
       </section>
     </main>
-
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <form>
-        <fieldset>
-          <legend>Escríbeme</legend>
-
-          <div>
-            <label>Nombres:</label>
-            <input type="text" placeholder="Juanito Carlos Pérez Palomino" />
-          </div>
-          <div>
-            <label>Correo:</label>
-            <input type="email" placeholder="juanito@ejemplo.com" />
-          </div>
-          <div>
-            <label>Teléfono:</label>
-            <input type="tel" placeholder="0912345678" />
-          </div>
-          <div>
-            <label>Mensaje:</label>
-            <textarea placeholder="Escribe tu mensaje aquí..."></textarea>
-          </div>
-          <div>
-            <input type="submit" value="Enviar" />
-          </div>
-        </fieldset>
-      </form>
-    </section>
-
-    <footer>
-      <p>2026 - Todos los derechos reservados. - Daniel Fernando Castillo Mera</p>
+    <footer class="footer">
+      <p>&copy; 2026 - Todos los derechos reservados. - Daniel Fernando Castillo Mera</p>
     </footer>
   </body>
 </html>
